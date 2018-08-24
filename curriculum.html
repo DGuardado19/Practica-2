@@ -11,28 +11,30 @@
     
     <article>
         <section>
+            <form action="#" method="post">
             <fieldset>
                 <legend>Personal Data</legend>
                 <div>
                     <label for="dui">DUI:</label>
-                    <input type="text" id="dui" placeholder="00184217" required>
+                    <input type="text" id="dui" placeholder="00184217" pattern="[0-9]{8}-[0-9]{1}" required>
                     <label for="FirstName">First Name:</label>
                     <input type="text" id="FirstName" placeholder="First Name"required>
                     <label for="LastName">Last Name:</label>
                     <input type="text" id="LastName" placeholder="LastName"required>
                     <label for="Gender">Gender</label>
-                    <input type="radio" name="Gender" value="M">M
+                    <input type="radio" name="Gender" value="M" checked>M
                     <input type="radio" name="Gender" value="F">F
                  </div>
                  <br>
                 <div>
                     <label for="Contact">Contact Number</label>
-                    <input type="text" id="Contact" required>
+                    <input type="text" id="Contact" pattern="[0-9]{4}-[0-9]{4}" required>
                     <label for="Birth">Birthdate</label>
-                    <input type="date" name="Birth" required>
+                    <input type="date" name="Birth" required min="2000-01-01" max="2018-12-31">
                     <label for="Status">Civil Status</label>
                     <select>
                             <option>Single</option>
+                            <option value="">Married</option>
                     </select>         
                     <label for="img">Image</label>     
                     <input type="file">   
@@ -41,7 +43,7 @@
             <fieldset>
                 <legend>Work Experience</legend>
                 <div>
-                    <textarea name="textarea" id="" cols="255" rows="10" placeholder="Experience"required ></textarea>
+                    <textarea name="textarea" id="" cols="255" rows="10" placeholder="Experience" ></textarea>
                 </div>
             </fieldset>
             <fieldset>
@@ -79,9 +81,9 @@
              </fieldset>
         </section>
         <br>
-<input type="button" name="Send" id="enviar" value="Send">
+<input type="submit" name="Send" id="enviar" value="Send">
 <input type="button" name="Cancel" id="cancelar" value="Cancel">
-
+</form>
 
     </article>
 
