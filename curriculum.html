@@ -1,0 +1,89 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Curriculum Vitae</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <center><h1>Curriculum Vitae </h1></center>
+    
+    <article>
+        <section>
+            <fieldset>
+                <legend>Personal Data</legend>
+                <div>
+                    <label for="dui">DUI:</label>
+                    <input type="text" id="dui" placeholder="00184217" required>
+                    <label for="FirstName">First Name:</label>
+                    <input type="text" id="FirstName" placeholder="First Name"required>
+                    <label for="LastName">Last Name:</label>
+                    <input type="text" id="LastName" placeholder="LastName"required>
+                    <label for="Gender">Gender</label>
+                    <input type="radio" name="Gender" value="M">M
+                    <input type="radio" name="Gender" value="F">F
+                 </div>
+                 <br>
+                <div>
+                    <label for="Contact">Contact Number</label>
+                    <input type="text" id="Contact" required>
+                    <label for="Birth">Birthdate</label>
+                    <input type="date" name="Birth" required>
+                    <label for="Status">Civil Status</label>
+                    <select>
+                            <option>Single</option>
+                    </select>         
+                    <label for="img">Image</label>     
+                    <input type="file">   
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Work Experience</legend>
+                <div>
+                    <textarea name="textarea" id="" cols="255" rows="10" placeholder="Experience"required ></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                 <legend>Academic Training </legend>
+                 <div>
+                    <textarea name="textarea" id="" cols="255" rows="10" placeholder="Academic Training" required></textarea>
+                </div>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Further Training</legend>
+                <div>
+                    <fieldset>
+                        <legend>Programming Lenguajes</legend>
+                        <div>
+                            <input type="checkbox" name="check[]">Java
+                            <input type="checkbox" name="check[]">C#
+                            <input type="checkbox" name="check[]">Phyton
+                            <input type="checkbox" name="check[]">C++
+                            <input type="checkbox" name="check[]">Ruby
+                        </div>
+
+                    </fieldset>
+<br>
+                    <fieldset>
+                            <legend>Web Technologies</legend>
+                            <input type="checkbox" name="checks[]">HTML5
+                            <input type="checkbox" name="checks[]">CSS/CSS3
+                            <input type="checkbox" name="checks[]">Materialize Css
+                            <input type="checkbox" name="checks[]">JavaScript
+                            <input type="checkbox" name="checks[]">Node.js
+                            <input type="checkbox" name="checks[]">Spring MVC
+                    </fieldset>
+                </div>
+             </fieldset>
+        </section>
+        <br>
+<input type="button" name="Send" id="enviar" value="Send">
+<input type="button" name="Cancel" id="cancelar" value="Cancel">
+
+
+    </article>
+
+</body>
+</html>
